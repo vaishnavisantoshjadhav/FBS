@@ -1,0 +1,16 @@
+num = 145
+org_num = num
+sum = 0
+while(num > 0):
+    d = num % 10
+    num = num // 10
+    print(d)
+    fact = 1
+    for i in range(1, d + 1):
+        fact *=i
+    print(fact)
+    sum += fact
+if(sum == org_num):
+    print(f'{org_num} is strong number.')
+else:
+    print(f'{org_num} is not strong number.')
